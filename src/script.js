@@ -128,13 +128,19 @@ function infoCard(info){
 
 
 function loaderOn(){
-  document.querySelector('.swiper-container').style.display = 'none'
-  document.querySelector('.camera__wrap').style.display = 'block'
+  document.querySelector('.swiper-container').style.display = 'none';
+  document.querySelector('.camera__wrap').style.display = 'block';
+
+  document.querySelector('.delete').style.display = 'none';
+  document.querySelector('.loader').style.display = 'block';
 }
 
 function loaderOff(){
-  document.querySelector('.swiper-container').style.display = 'block'
-  document.querySelector('.camera__wrap').style.display = 'none'
+  document.querySelector('.swiper-container').style.display = 'block';
+  document.querySelector('.camera__wrap').style.display = 'none';
+
+  document.querySelector('.delete').style.display = 'block';
+  document.querySelector('.loader').style.display = 'none';
 }
 
 document.querySelector('.delete').addEventListener('click', ()=>{
